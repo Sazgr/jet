@@ -136,8 +136,9 @@ namespace jet {
                     if (score >= 0) {
                         if (static_cast<PieceType>(pt) == PieceType::KING && (attackers & board.us(st))) {
                             st = ~st;
-                            break;
                         }
+
+                        break;
                     }
 
                     PieceType _pt = static_cast<PieceType>(pt);
